@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8F000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:fontFamily="@font/caveat_brush"
+                android:gravity="center"
+                android:paddingTop="100dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="55dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/loginbg"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/caveat_brush"
+                    android:hint="Email"
+                    android:id="@+id/inputEmail"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/loginbg"
+                    android:drawableLeft="@drawable/ic_baseline_security_24"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/caveat_brush"
+                    android:hint="Password"
+                    android:id="@+id/inputPassword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/loginbg"
+                    android:drawableLeft="@drawable/ic_baseline_security_24"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/caveat_brush"
+                    android:hint="Conform password"
+                    android:inputType="textPassword"
+                    android:id="@+id/inputConformpassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/loginbg"
+                android:fontFamily="@font/caveat_brush"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/caveat_brush"
+                android:gravity="center"
+                android:text="Already have Account?"
+                android:id="@+id/alreadyhaveaccount"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
